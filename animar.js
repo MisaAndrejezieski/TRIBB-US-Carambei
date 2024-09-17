@@ -14,9 +14,13 @@ overlay.addEventListener('click', ()=>{
     menu.classList.remove('abrir-menu')
 })
 
-
 window.addEventListener('load', function() {
     var video = document.getElementById('meuVideo');
     video.play();
 });
 
+document.getElementById('closeButton').addEventListener('click', function() {
+    var video = document.getElementById('meuVideo');
+    video.pause();
+    document.getElementById('videoContainer').style.display = 'none';
+});

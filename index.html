@@ -1,229 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- GOOGLE FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-        <!-- FIM GOOGLE FONTES -->
-        <!-- BOOTSTRAP ICONS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <!-- FIM BOOTSTRAP ICONS -->
-        <link rel="stylesheet" href="style.css">
+    <script src="./animar.js" defer></script>
 
-        <script src="menu.js" defer></script>
+    <title>Tribbus</title>
 
-        <title>Tribbus</title>
-    </head>
+</head>
 
-    <body>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="https://sites.google.com/view/msacolorfull/in%C3%ADcio">
+                    <img src="images/logo-002.png" alt="Tribbus">
+                </a>
+            </div><!--logo-->
 
-        <header>
-            <div class="interface">
-                <div class="logo">
-                    <a href="https://sites.google.com/view/msacolorfull/in%C3%ADcio">
-                        <img src="images/logo-002.png" alt="Tribbus">
-                    </a>
-                </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#topo-do-site">Início</a></li>
+                    <li><a href="#especialidade">Meditação</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
 
-                <nav class="menu-desktop">
+            <div class="btn-contato">
+                <a href="mailto:tribbuscarambei@gmail.com">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
                     <ul>
                         <li><a href="#topo-do-site">Início</a></li>
                         <li><a href="#especialidade">Meditação</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
 
-                <div class="btn-contato">
-                    <a href="#tribbuscarambei@gmail.com">
-                        <button>Contato</button>
-                    </a>
-                </div><!--btn-contato-->
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
 
-                <div class="btn-abrir-menu" id="btn-menu">
-                    <i class="bi bi-list"></i>
-                </div>
-
-                <div class="menu-mobile" id="menu-mobile">
-                    <div class="btn-fechar">
-                        <i class="bi bi-x-lg"></i>
-                    </div>
-
-                    <nav>
-                        <ul>
-                            <li><a href="#topo-do-site">Início</a></li>
-                            <li><a href="#especialidade">Meditação</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                        </ul>
-                    </nav>
-
-                </div><!--menu-mobile-->
-                <div class="overlay-menu" id="overlay-menu"></div>
-            </div><!--interface-->
-        </header>
-
-        <main>
-            <section class="topo-do-site" id="topo-do-site">
-                <div class="interface" id="topo-do-site">
-                    <div class="flex">
-                        <div class="txt-topo-site">
-                            <h1>Respiração Consciente: Tranquilidade e Saúde<span>.</span></h1>
-                            <p> A meditação Breathwork é uma prática poderosa que promove a paz interior e o bem-estar físico. Ao focar na respiração, os praticantes podem alcançar um estado de relaxamento profundo, reduzindo o estresse e a ansiedade. Essa técnica ajuda a melhorar a concentração, aumenta a clareza mental e fortalece o sistema imunológico. Com a prática regular, o Breathwork oferece um caminho para uma vida mais equilibrada e harmoniosa, conectando o corpo e a mente de maneira significativa.</p>
-
-                            <div class="btn-contato">
-                                <a href="#contato">
-                                    <button>Entre em contato</button>
-                                </a>
-                            </div>
-                        </div><!--txt-topo-site-->
-
-                        <div class="img-topo-site">
-                            <img src="images/tumblr_meditacao.webp" alt="">
-                        </div><!--img-topo-site-->
-                    </div><!--flex-->
-                </div><!--interface-->
-            </section><!--topo-do-site-->
-
-            <div id="videoContainer">
-                <video id="meuVideo" controls>
-                    <source src="./The Breeders - cannoball.mp4" type="video/mp4">
-                    Seu navegador não suporta a tag de vídeo.
-                </video>
-                <button id="closeButton">Fechar</button>
-            </div>
-        
-            <script>
-                window.addEventListener('load', function() {
-                    var video = document.getElementById('meuVideo');
-                    video.play();
-                });
-        
-                document.getElementById('closeButton').addEventListener('click', function() {
-                    var video = document.getElementById('meuVideo');
-                    video.pause();
-                    document.getElementById('videoContainer').style.display = 'none';
-                });
-            </script>
-            
-            <section class="especiliadades" id="especialidade">
-                <div class="interface">
-                    <h2 class="titulo">Minha <span>Meditação.</span></h2>
-                    <div class="flex">
-                        <div class="especialidades-box">
-                            <i class="bi bi-code-square"></i>
-                            <h3>Harmonia</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore
-                                inventore delectus at.</p>
-                        </div><!--especialidades-box-->
-
-                        <div class="especialidades-box">
-                            <i class="bi bi-cart"></i>
-                            <h3>Budismo</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore
-                                inventore delectus at.</p>
-                        </div><!--especialidades-box-->
-
-                        <div class="especialidades-box">
-                            <i class="bi bi-wordpress"></i>
-                            <h3>Meditação</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore
-                                inventore delectus at.</p>
-                        </div><!--especialidades-box-->
-                    </div><!--flex-->
-                </div><!--interface-->
-            </section><!--especiliadades-->
-
-            <section class="sobre" id="sobre">
-                <div class="interface">
-                    <div class="flex">
-                        <div class="img-sobre">
-                            <img src="images/me.jpg" alt="">
-                        </div><!--img-sobre-->
-
-                        <div class="txt-sobre">
-                            <h2>Bem-Vindo à <span>Comunidade Tribbus Carambeí.</span></h2>
-                            <p>Na Tribbus, unimos o pulsar da vida urbana com a sabedoria ancestral da natureza. Nosso objetivo é unir aqueles que buscam os benefícios de uma vida mais saudável e produtiva, sem abrir mão do dinamismo da vida moderna. Aqui, você encontrará pessoas que, como você, desejam equilibrar sucesso profissional e bem-estar pessoal através de práticas que nos reconectam com o mundo natural.</p>
-                            <p>Nossa comunidade é o ponto de encontro para mentes modernas que valorizam saúde, sustentabilidade e sucesso. A Tribbus oferece um espaço para crescer, aprender e prosperar, mantendo um vínculo com a terra que nos sustenta. Junte-se a nós e descubra como uma vida mais conectada à natureza pode transformar sua saúde, seu trabalho e seu mundo.</p>
-                            <div class="btn-social">
-                                <a href="https://www.instagram.com/misaelandrejezieski/?hl=pt_BR"><button><i class="bi bi-instagram"></i></button></a>
-                                <a href="https://www.facebook.com/profile.php?id=100034358779961"><button><i class="bi bi-facebook"></i></button></a>
-                                <a href="https://sites.google.com/view/misa-misa/home"><button><i class="bi bi-google"></i></button></a>
-                            </div><!--btn-social-->
-                        </div><!--txt-sobre-->
-                    </div><!--flex-->
-                </div><!--interface-->
-            </section><!--sobre-->
-
-            <section class="portfolio" id="projetos">
-                <div class="interface">
-                    <h2 class="titulo">Nossos <span>Projetos.</span></h2>
-                    <div class="flex">
-                        <div class="img-port" style="background-image: url(images/tumblr_ref_001.jpg);">
-                            <div class="overlay">Fique bem!</div>
-                        </div>
-                        <div class="img-port" style="background-image: url(images/_cav001.jpg);">
-                            <div class="overlay">Mas...</div>
-                        </div>                      
-                    </div><!--flex-->
-                </div><!--interface-->
-            </section><!--portfolio-->
-
-            <section class="portfolio" id="projetos">
-                <div class="interface">
-                    <h2 class="titulo">Nossos <span>Projetos.</span></h2>
-                </div>
-
-                <iframe width="853" height="480" border-radius:40px src="https://www.youtube.com/embed/W5D0b7XWvdA" 
-                        title="Festival das Cores" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-            </section>
-
-            <section class="formulario" id="contato">
-                <div class="interface">
-                    <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                        <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                        <input type="text" name="" id="" placeholder="Seu celular:">
-                        <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                    </form>
-                </div><!--interface-->
-            </section><!--formulario-->
-
-        </main>
-
-        <footer>
+    <main>
+        <section class="topo-do-site" id="topo-do-site">
             <div class="interface">
-                <div class="line-footer">
-                    <div class="flex">
-                        <div class="logo-footer">
-                            <img src="images/logo-002.png" alt="Logotipo Tribbus">
-                        </div><!--logo-footer-->
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Respiração Consciente: Tranquilidade e Saúde<span>.</span></h1>
+                        <p> A meditação Breathwork é uma prática poderosa que promove a paz interior e o bem-estar físico. Ao focar na respiração, os praticantes podem alcançar um estado de relaxamento profundo, reduzindo o estresse e a ansiedade. Essa técnica ajuda a melhorar a concentração, aumenta a clareza mental e fortalece o sistema imunológico. Com a prática regular, o Breathwork oferece um caminho para uma vida mais equilibrada e harmoniosa, conectando o corpo e a mente de maneira significativa.</p>
+
+                        <div class="btn-contato">
+                            <a href="#contato">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="images/tumblr_meditacao.webp" alt="" />
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <div id="videoContainer">
+            <video id="meuVideo" controls>
+                <source src="./The Breeders - cannoball.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <button id="closeButton">Fechar</button>
+        </div>
+
+        <section class="especialidades" id="especialidade">
+            <div class="interface">
+                <h2 class="titulo">Minha <span>Meditação.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Harmonia</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-cart"></i>
+                        <h3>Budismo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-wordpress"></i>
+                        <h3>Meditação</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/me.jpg" alt="" />
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>Bem-Vindo à <span>Comunidade Tribbus Carambeí.</span></h2>
+                        <p>Na Tribbus, unimos o pulsar da vida urbana com a sabedoria ancestral da natureza. Nosso objetivo é unir aqueles que buscam os benefícios de uma vida mais saudável e produtiva, sem abrir mão do dinamismo da vida moderna. Aqui, você encontrará pessoas que, como você, desejam equilibrar sucesso profissional e bem-estar pessoal através de práticas que nos reconectam com o mundo natural.</p>
+                        <p>Nossa comunidade é o ponto de encontro para mentes modernas que valorizam saúde, sustentabilidade e sucesso. A Tribbus oferece um espaço para crescer, aprender e prosperar, mantendo um vínculo com a terra que nos sustenta. Junte-se a nós e descubra como uma vida mais conectada à natureza pode transformar sua saúde, seu trabalho e seu mundo.</p>
                         <div class="btn-social">
                             <a href="https://www.instagram.com/misaelandrejezieski/?hl=pt_BR"><button><i class="bi bi-instagram"></i></button></a>
-                                <a href="https://www.facebook.com/profile.php?id=100034358779961"><button><i class="bi bi-facebook"></i></button></a>
-                                <a href="https://sites.google.com/view/misa-misa/home"><button><i class="bi bi-google"></i></button></a>
+                            <a href="https://www.facebook.com/profile.php?id
+                            <a href="https://www.facebook.com/profile.php?id=100034358779961"><button><i class="bi bi-facebook"></i></button></a>
+                        </div>
+                            <a href="https://sites.google.com/view/misa-misa/home"><button><i class="bi bi-google"></i></button></a>
                         </div><!--btn-social-->
                     </div>
                 </div><!--line-footer-->
 
                 <div class="line-footer borda">
-                    <p><i class="bi bi-envelope-fill"></i> <a
-                            href="mailto:tribbuscarambei@gmail.com">tribbuscarambei@gmail.com</a></p>
+                    <p><i class="bi bi-envelope-fill"></i> <a href="mailto:tribbuscarambei@gmail.com">tribbuscarambei@gmail.com</a></p>
                 </div><!--line-footer-->
             </div><!--interface-->
         </footer>
 
-    </body>
-
+        <script src="./animar.js"></script>   
+    
+</body>
 </html>
