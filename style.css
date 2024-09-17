@@ -6,9 +6,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+video {
+    width: 100%;
+    height: auto;
+}
+
 body {
     background-color: #000;
-    height: 100vh;
+    height: 100vh;   
 }
 
 .parisienne-regular {
@@ -319,10 +324,7 @@ section.portfolio .flex {
     opacity: 1;
 }
 
-video {
-    width: 100%;
-    height: auto;
-}
+
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
 section.formulario {
