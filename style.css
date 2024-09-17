@@ -319,6 +319,11 @@ section.portfolio .flex {
     opacity: 1;
 }
 
+video {
+    width: 100%;
+    height: auto;
+}
+
 /* ESTILO DO FORMULÁRIO DE CONTATO */
 section.formulario {
     padding: 80px 4%;
