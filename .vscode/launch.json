@@ -5,30 +5,17 @@
         "name": "Launch Chrome",
         "type": "chrome",
         "request": "launch",
-        "url": "http://localhost:8080",
+        "url": "http://localhost:5500",
         "webRoot": "${workspaceFolder}"
       },
       {
         "name": "Launch Firefox",
         "type": "firefox",
         "request": "launch",
-        "url": "http://localhost:8080",
+        "url": "http://localhost:5500",
         "webRoot": "${workspaceFolder}"
       },
-      {
-        "name": "Launch Edge",
-        "type": "edge",
-        "request": "launch",
-        "url": "http://localhost:8080",
-        "webRoot": "${workspaceFolder}"
-      },
-      {
-        "name": "Launch Safari",
-        "type": "safari",
-        "request": "launch",
-        "url": "http://localhost:8080",
-        "webRoot": "${workspaceFolder}"
-      }
+      
     ]
   }
   
