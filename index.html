@@ -90,15 +90,24 @@
                 </div><!--interface-->
             </section><!--topo-do-site-->
 
-            <video autoplay controls>
-                <source src="./The Breeders - cannoball.mp4" type="video/mp4">
-                Seu navegador não suporta a tag de vídeo.
-            </video>
-
+            <div id="videoContainer">
+                <video id="meuVideo" controls>
+                    <source src="./The Breeders - cannoball.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <button id="closeButton">Fechar</button>
+            </div>
+        
             <script>
                 window.addEventListener('load', function() {
                     var video = document.getElementById('meuVideo');
                     video.play();
+                });
+        
+                document.getElementById('closeButton').addEventListener('click', function() {
+                    var video = document.getElementById('meuVideo');
+                    video.pause();
+                    document.getElementById('videoContainer').style.display = 'none';
                 });
             </script>
             
