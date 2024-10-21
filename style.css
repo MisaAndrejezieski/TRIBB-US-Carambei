@@ -191,7 +191,7 @@ section.topo-do-site .flex {
     border: #000;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-    border-radius: 50%;
+    border-radius: 60%;
 }
 
 
