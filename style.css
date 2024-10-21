@@ -190,7 +190,7 @@ section.topo-do-site .flex {
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-    border-radius: 50%; /* Adiciona bordas arredondadas */
+    border-radius: 40%; /* Adiciona bordas arredondadas */
     object-fit: cover; /* Ajusta a imagem dentro da borda */
 }
 
