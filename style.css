@@ -191,7 +191,7 @@ section.topo-do-site .flex {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     border-color: #000;
-    border-radius: 48%; /* Adiciona bordas arredondadas */
+    border-radius: 47%; /* Adiciona bordas arredondadas */
     object-fit: cover; /* Ajusta a imagem dentro da borda */
 }
 
